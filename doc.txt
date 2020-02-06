@@ -1,0 +1,4 @@
+how to create an app in folder
+https://stackoverflow.com/questions/33243661/startapp-with-manage-py-to-create-app-in-another-directory
+
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
