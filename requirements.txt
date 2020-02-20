@@ -1,6 +1,7 @@
 asgiref==3.2.3
 Babel==2.8.0
 backcall==0.1.0
+certifi==2019.11.28
 decorator==4.4.1
 Django==3.0.2
 django-appconf==1.0.3
@@ -20,7 +21,9 @@ psycopg2==2.8.4
 ptyprocess==0.6.0
 Pygments==2.5.2
 pytz==2019.3
+sentry-sdk==0.14.1
 six==1.14.0
 sqlparse==0.3.0
 traitlets==4.3.3
+urllib3==1.25.8
 wcwidth==0.1.8

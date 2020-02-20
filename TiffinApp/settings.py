@@ -11,7 +11,17 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import sentry_sdk
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
+sentry_sdk.init(
+    dsn="https://181b7188ee184da5a72c1fc629bfcc7b@sentry.io/2709595",
+    integrations=[DjangoIntegration()],
+
+    # If you wish to associate users to errors (assuming you are using
+    # django.contrib.auth) you may enable sending PII data.
+    send_default_pii=True)
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -22,9 +32,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'g=*$-laj4p%x&yf8kn$06s%p^fv+l136b1qh)kj@+1*2)tt9$b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
